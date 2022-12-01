@@ -1,0 +1,39 @@
+Okej, miśki, to lecimy z tematem:
+1. Instalujemy sobie dockera + docker-compose
+sudo snap install docker
+sudo apt install docker-compose
+
+2. Jest sobie takie piękne repo https://github.com/SimmonDobber/PrestaShop , na którym znajduje się nasz projekcik.
+Polecam go sobie zpullować w jakimś IDE najlepiej (nwm czego tam będziecie używać), a następnie cierpliwie czekać, bo skurwysyn jest potężny i trochę mu zajmuje się ogarnąć xd
+
+3. Jak już mamy, to z terminala (może być ten z IDE) wpisujemy sobie:
+sudo docker-compose up
+jak terminal się ogarnie, to znaczy, że presta się zbudowała i zdeployowała pierwszy raz, więc powinna stać pod adresem localhost:8001
+teraz aby pozaciągały się zmiany z naszych plików, a nie z oficjalnego repo, to trzeba będzie jeszcze raz sobie docker-compose'a położyć, czyli:
+sudo docker-compose down
+oraz ponownie go postawić
+sudo docker compose up
+jak teraz się ogarnie terminal i presta postawi, to logo na pierwszej stronie powinno być zmienione na jedyne słuszne.
+
+Troubleshooting:
+
+- jak docker drze pizdę o to, że mu ktoś podjebał porty, to szukacie złodzieja portów (a konkretnie jego PID)
+sudo lsof -i -P -n | grep 8001
+A następnie go wyjaśniacie 
+kill -9 <PID>
+
+- jak coś się popierdoli z kontenerami i docker-compose bedzie się darł o już stojące kontenery, to pierw je sobie wylistowujecie
+sudo docker container ls
+a następnie po ubijacie po hashach
+sudo docker kill <hash>
+jak się nie chcą ubić, to musicie sobie ogarnąć dockera w ten sposób: 
+sudo systemctl restart docker.socket docker.service
+
+-jak coś innego nie działa, to albo Wy spierdoliliście, albo boska ręka się do tego przyłożyła [sadge] 
+ 
+
+Enjoy
+
+ps. Ja to testowałem na 2 kompach i mi ładnie działa, więc jak ktoś mi powie, że u niego się pierdoli, to uduszę, bo mam przez te jebane dockery początki choroby psychicznej i nie żartuję.
+ps2. Jak ktoś kurwa kiedyś będzie narzekał na Andrzeja w robocie, że taki zły, agresywny i wgl, to sam mu osobiście najebię, bo nawet nie wiecie przez co chłop od 11 lat przechodzi codziennie...
+ps3. Idę płakać.
