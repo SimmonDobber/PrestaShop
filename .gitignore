@@ -1,8 +1,7 @@
-
 # Cache, temp and personal files
 
-.log
-npm-debug.log.
+*.log
+npm-debug.log.*
 .sass-cache/
 .cache/
 
@@ -49,7 +48,7 @@ npm-debug.log.
 !/admin-dev/export/.htaccess
 !/admin-dev/export/index.php
 
-themes//cache/
+themes/*/cache/*
 
 # Symfony
 !/var/cache
