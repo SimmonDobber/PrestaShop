@@ -18,6 +18,18 @@ services:
       MYSQL_ROOT_PASSWORD: prestashop
       MYSQL_DATABASE: prestashop
     restart: always
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mysql:mysql
+    ports:
+      - 1235:80
+    depends_on:
+      - mysql
+    environment:
+      - PMA_HOST=mysql
+      - PMA_USER=root
+      - PMA_PASSWORD=prestashop
   prestashop-git:
     build:
       dockerfile: .docker/Dockerfile
@@ -36,8 +48,8 @@ services:
       PS_DOMAIN: ${PS_DOMAIN:-localhost:8001}
       PS_FOLDER_INSTALL: ${PS_FOLDER_INSTALL:-install-dev}
       PS_FOLDER_ADMIN: ${PS_FOLDER_ADMIN:-admin-dev}
-      PS_COUNTRY: ${PS_COUNTRY:-fr}
-      PS_LANGUAGE: ${PS_LANGUAGE:-fr}
+      PS_COUNTRY: ${PS_COUNTRY:-pl}
+      PS_LANGUAGE: ${PS_LANGUAGE:-pl}
       PS_DEV_MODE: ${PS_DEV_MODE:-0}
       ADMIN_MAIL: ${ADMIN_MAIL:-demo@prestashop.com}
       ADMIN_PASSWD: ${ADMIN_PASSWD:-Correct Horse Battery Staple}
