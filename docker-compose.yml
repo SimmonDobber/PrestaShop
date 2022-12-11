@@ -7,7 +7,9 @@ volumes:
 
 services:
   mysql:
-    image: mysql:5
+    build:
+      dockerfile: Dockerfile
+      context: ./mysql/.
     ports:
       - "3306"
     volumes:
