@@ -1,0 +1,60 @@
+{
+  "name": "ergebnis/json-normalizer",
+  "type": "library",
+  "description": "Provides generic and vendor-specific normalizers for normalizing JSON documents.",
+  "keywords": [
+    "json",
+    "normalizer"
+  ],
+  "homepage": "https://github.com/ergebnis/json-normalizer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andreas Möller",
+      "email": "am@localheinz.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2 || ^8.0",
+    "ext-json": "*",
+    "ergebnis/json-printer": "^3.1.1",
+    "justinrainbow/json-schema": "^5.2.10"
+  },
+  "require-dev": {
+    "ergebnis/license": "^1.1.0",
+    "ergebnis/php-cs-fixer-config": "^2.10.0",
+    "ergebnis/phpstan-rules": "~0.15.3",
+    "ergebnis/test-util": "^1.4.0",
+    "infection/infection": "~0.15.3",
+    "jangregor/phpstan-prophecy": "~0.8.1",
+    "phpstan/extension-installer": "^1.1.0",
+    "phpstan/phpstan": "~0.12.80",
+    "phpstan/phpstan-deprecation-rules": "~0.12.6",
+    "phpstan/phpstan-phpunit": "~0.12.17",
+    "phpstan/phpstan-strict-rules": "~0.12.9",
+    "phpunit/phpunit": "^8.5.14",
+    "psalm/plugin-phpunit": "~0.12.2",
+    "vimeo/psalm": "^3.18"
+  },
+  "config": {
+    "platform": {
+      "php": "7.2.33"
+    },
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Ergebnis\\Json\\Normalizer\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ergebnis\\Json\\Normalizer\\Test\\": "test/"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/ergebnis/json-normalizer/issues",
+    "source": "https://github.com/ergebnis/json-normalizer"
+  }
+}

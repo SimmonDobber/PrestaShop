@@ -1,0 +1,74 @@
+{
+    "name": "prestashop/laminas-code-lts",
+    "description": "Adding support for a wider range of PHP versions to laminas/laminas-code",
+    "keywords": [
+        "laminas",
+        "laminasframework",
+        "code"
+    ],
+    "homepage": "https://github.com/prestashop/laminas-code-lts",
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": ">=7.2, <8.2"
+    },
+    "replace": {
+        "laminas/laminas-code": "^4.5"
+    },
+    "require-dev": {
+        "ext-phar": "*",
+        "doctrine/annotations": "^1.13.2",
+        "laminas/laminas-coding-standard": "^2.1.0",
+        "laminas/laminas-stdlib": "^3.2.1",
+        "phpunit/phpunit": "^8.5.26",
+        "psalm/plugin-phpunit": "^0.16.1",
+        "vimeo/psalm": "^4.13.1"
+    },
+    "suggest": {
+        "doctrine/annotations": "Doctrine\\Common\\Annotations >=1.0 for annotation features",
+        "laminas/laminas-stdlib": "Laminas\\Stdlib component"
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "7.2.99"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Laminas\\Code\\": "src/"
+        },
+        "files": [
+            "polyfill/ReflectionEnumPolyfill.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaminasTest\\Code\\": "test/"
+        }
+    },
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@test"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "static-analysis": "psalm --shepherd --stats",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+    },
+    "support": {
+        "issues": "https://github.com/laminas/laminas-code/issues",
+        "forum": "https://discourse.laminas.dev",
+        "chat": "https://laminas.dev/chat",
+        "source": "https://github.com/laminas/laminas-code",
+        "docs": "https://docs.laminas.dev/laminas-code/",
+        "rss": "https://github.com/laminas/laminas-code/releases.atom"
+    },
+    "extra": {
+        "thanks": {
+            "name": "laminas/laminas-code",
+            "url": "https://github.com/laminas/laminas-code"
+        }
+    }
+}

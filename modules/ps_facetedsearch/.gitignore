@@ -1,0 +1,7 @@
+/build/clover.xml
+/vendor
+/node_modules
+tests/php/coverage
+config_*.xml
+.php_cs.cache
+.idea

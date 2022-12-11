@@ -1,0 +1,43 @@
+{
+  "name": "prestashop/ps_distributionapiclient",
+  "description": "PrestaShop - Modules from distribution API",
+  "homepage": "https://github.com/PrestaShop/ps_distributionapiclient",
+  "license": "AFL-3.0",
+  "authors": [
+    {
+      "name": "PrestaShop SA",
+      "email": "contact@prestashop.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.5",
+    "prestashop/circuit-breaker": "^4.0",
+    "doctrine/cache": "^2.1"
+  },
+  "require-dev": {
+    "prestashop/php-dev-tools": "^4.2",
+    "phpstan/phpstan": "^1.4",
+    "phpunit/phpunit": "^8.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "PrestaShop\\Module\\DistributionApiClient\\": "src/"
+    },
+    "classmap": ["ps_distributionapiclient.php"]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PrestaShop\\Module\\DistributionApiClient\\Tests\\": "tests/Unit/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "classmap-authoritative": true,
+    "optimize-autoloader": true,
+    "prepend-autoloader": false,
+    "platform": {
+      "php": "7.2.5"
+    }
+  },
+  "type": "prestashop-module"
+}
