@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-12-10 23:36:28
+/* Smarty version 4.2.1, created on 2022-12-11 21:08:01
   from 'module:psbrandlistviewstemplates' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_639509ec6c15d5_70722206',
+  'unifunc' => 'content_639638a10acab1_32691441',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,8 +21,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:ps_brandlist/views/templates/_partials/".((string)$_smarty_tpl->tpl_vars[\'brand_display_type\']->value).".tpl' => 1,
   ),
 ),false)) {
-function content_639509ec6c15d5_70722206 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '2146915599639509ec6bf969_93757020';
+function content_639638a10acab1_32691441 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '114553152639638a10aab77_36991441';
 ?>
 
 <div id="search_filters_brands">

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-12-11 00:45:58
+/* Smarty version 4.2.1, created on 2022-12-11 21:05:14
   from '/var/www/html/admin-dev/themes/default/template/controllers/carrier_wizard/summary.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_63951a360d1495_98838770',
+  'unifunc' => 'content_639637faa98c59_46827249',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63951a360d1495_98838770 (Smarty_Internal_Template $_smarty_tpl) {
+function content_639637faa98c59_46827249 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="defaultForm">
 	<div class="panel">

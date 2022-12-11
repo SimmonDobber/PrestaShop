@@ -1,1 +1,69 @@
 
+# Cache, temp and personal files
+
+.log
+npm-debug.log.
+.sass-cache/
+.cache/
+
+# Cache
+/cache/*
+!/cache/.htaccess
+!/cache/cachefs/index.php
+!/cache/deprecated.txt
+!/cache/index.php
+!/cache/purifier/index.php
+!/cache/push/activity
+!/cache/push/index.php
+!/cache/push/trends
+!/cache/sandbox/index.php
+!/cache/smarty/cache/index.php
+!/cache/smarty/compile/index.php
+!/cache/smarty/index.php
+!/cache/tcpdf/index.php
+
+# Download
+/download/*
+!/download/.htaccess
+!/download/index.php
+
+# Upload
+/upload/*
+!/upload/index.php
+!/upload/.htaccess
+
+/docs/phpdoc-sf/
+
+/admin-dev/autoupgrade/*
+!/admin-dev/autoupgrade/index.php
+!/admin-dev/autoupgrade/backup/index.php
+
+/admin-dev/backups/*
+!/admin-dev/backups/.htaccess
+
+/admin-dev/import/*
+!/admin-dev/import/.htaccess
+!/admin-dev/import/index.php
+
+/admin-dev/export/*
+!/admin-dev/export/.htaccess
+!/admin-dev/export/index.php
+
+themes//cache/
+
+# Symfony
+!/var/cache
+/var/cache/*
+!var/cache/.gitkeep
+!/var/logs
+/var/logs/*
+!var/logs/.gitkeep
+!/var/sessions
+/var/sessions/*
+!var/sessions/.gitkeep
+!var/SymfonyRequirements.php
+!/var/modules
+/var/modules/*
+!/var/modules/.gitkeep
+
+!/*.xml

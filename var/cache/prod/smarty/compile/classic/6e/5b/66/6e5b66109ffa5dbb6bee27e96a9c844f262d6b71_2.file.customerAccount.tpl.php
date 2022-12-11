@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-12-11 00:55:42
+/* Smarty version 4.2.1, created on 2022-12-11 21:08:07
   from '/var/www/html/modules/psgdpr/views/templates/front/customerAccount.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_63951c7ed32ba8_42962286',
+  'unifunc' => 'content_639638a7210e57_10351686',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63951c7ed32ba8_42962286 (Smarty_Internal_Template $_smarty_tpl) {
+function content_639638a7210e57_10351686 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="psgdpr-link" href="<?php echo htmlspecialchars((string) $_smarty_tpl->tpl_vars['front_controller']->value, ENT_QUOTES, 'UTF-8');?>
 ">

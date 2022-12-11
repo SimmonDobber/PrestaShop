@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-12-11 00:55:42
+/* Smarty version 4.2.1, created on 2022-12-11 21:08:07
   from 'module:blockwishlistviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_63951c7ed2f727_99220715',
+  'unifunc' => 'content_639638a720d8f9_16398376',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63951c7ed2f727_99220715 (Smarty_Internal_Template $_smarty_tpl) {
+function content_639638a720d8f9_16398376 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="wishlist-link" href="<?php echo htmlspecialchars((string) $_smarty_tpl->tpl_vars['url']->value, ENT_QUOTES, 'UTF-8');?>
 ">

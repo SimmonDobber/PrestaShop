@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-12-11 00:51:16
+/* Smarty version 4.2.1, created on 2022-12-11 21:04:52
   from 'module:pscashondeliveryviewstemp' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_63951b74ac0c79_50657437',
+  'unifunc' => 'content_639637e4453ba7_17281678',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63951b74ac0c79_50657437 (Smarty_Internal_Template $_smarty_tpl) {
+function content_639637e4453ba7_17281678 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section id="ps_cashondelivery-paymentOptions-additionalInformation">
   <p><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'You pay for the merchandise upon delivery','d'=>'Modules.Cashondelivery.Shop'),$_smarty_tpl ) );?>

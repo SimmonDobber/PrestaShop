@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-12-10 23:38:48
+/* Smarty version 4.2.1, created on 2022-12-11 21:29:25
   from '/var/www/html/admin-dev/themes/default/template/controllers/import/modal_import_progress.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_63950a78127177_36163315',
+  'unifunc' => 'content_63963da56e1716_80267882',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63950a78127177_36163315 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63963da56e1716_80267882 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="modal-body">
   <div class="alert alert-warning" id="import_details_stop" style="display:none;">
     <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>"Aborting, please wait...",'d'=>"Admin.Advparameters.Notification"),$_smarty_tpl ) );?>

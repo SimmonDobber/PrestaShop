@@ -16,6 +16,6 @@ if (!\class_exists(appAppKernelProdContainer::class, false)) {
 
 return new \Container7AoTP9x\appAppKernelProdContainer([
     'container.build_hash' => '7AoTP9x',
-    'container.build_id' => 'c2b1b3de',
-    'container.build_time' => 1670711753,
+    'container.build_id' => '95c1bd9b',
+    'container.build_time' => 1670788765,
 ], __DIR__.\DIRECTORY_SEPARATOR.'Container7AoTP9x');
