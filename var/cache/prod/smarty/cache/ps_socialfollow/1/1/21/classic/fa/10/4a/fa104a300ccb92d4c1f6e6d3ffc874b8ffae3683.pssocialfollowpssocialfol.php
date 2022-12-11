@@ -1,24 +1,24 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-12-11 15:42:15
+/* Smarty version 4.2.1, created on 2022-12-11 20:55:00
   from 'module:pssocialfollowpssocialfol' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_6395ec477cf465_76803620',
+  'unifunc' => 'content_63963594229dc7_55321481',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '80ac9ddb06fe7b43ffdd2f5cd1185536480d2577' => 
     array (
       0 => 'module:pssocialfollowpssocialfol',
-      1 => 1666708672,
+      1 => 1670788192,
       2 => 'module',
     ),
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_6395ec477cf465_76803620 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63963594229dc7_55321481 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'renderLogo' => 
   array (

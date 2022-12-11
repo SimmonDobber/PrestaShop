@@ -1,24 +1,24 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-12-11 15:42:15
+/* Smarty version 4.2.1, created on 2022-12-11 20:55:00
   from 'module:pscustomeraccountlinkspsc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_6395ec477de563_47829619',
+  'unifunc' => 'content_63963594285b16_05633406',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '42f9461127ce7396a601c2484841253ea5ba658f' => 
     array (
       0 => 'module:pscustomeraccountlinkspsc',
-      1 => 1666708672,
+      1 => 1670788192,
       2 => 'module',
     ),
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_6395ec477de563_47829619 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63963594285b16_05633406 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'renderLogo' => 
   array (
@@ -30,12 +30,12 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
 ?>
 <div id="block_myaccount_infos" class="col-md-3 links wrapper">
   <p class="h3 myaccount-title hidden-sm-down">
-    <a class="text-uppercase" href="http://localhost:8001/moje-konto" rel="nofollow">
-      Twoje konto
+    <a class="text-uppercase" href="http://localhost:8001/mon-compte" rel="nofollow">
+      Votre compte
     </a>
   </p>
   <div class="title clearfix hidden-md-up" data-target="#footer_account_list" data-toggle="collapse">
-    <span class="h3">Twoje konto</span>
+    <span class="h3">Votre compte</span>
     <span class="float-xs-right">
       <span class="navbar-toggler collapse-icons">
         <i class="material-icons add">&#xE313;</i>
@@ -44,12 +44,12 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
     </span>
   </div>
   <ul class="account-list collapse" id="footer_account_list">
-            <li><a href="http://localhost:8001/sledzenie-zamowien-gosci" title="Śledzenie zamówienia" rel="nofollow">Śledzenie zamówienia</a></li>
-        <li><a href="http://localhost:8001/moje-konto" title="Zaloguj się do swojego konta klienta" rel="nofollow">Zaloguj się</a></li>
-        <li><a href="http://localhost:8001/registration" title="Utwórz konto" rel="nofollow">Utwórz konto</a></li>
+            <li><a href="http://localhost:8001/suivi-commande-invite" title="Suivi de commande" rel="nofollow">Suivi de commande</a></li>
+        <li><a href="http://localhost:8001/mon-compte" title="Identifiez-vous" rel="nofollow">Connexion</a></li>
+        <li><a href="http://localhost:8001/inscription" title="Créez votre compte" rel="nofollow">Créez votre compte</a></li>
         <li>
-  <a href="//localhost:8001/module/ps_emailalerts/account" title="Moje powiadomienia">
-    Moje powiadomienia
+  <a href="//localhost:8001/module/ps_emailalerts/account" title="Mes alertes">
+    Mes alertes
   </a>
 </li>
 
