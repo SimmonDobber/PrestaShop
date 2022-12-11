@@ -8,7 +8,6 @@ volumes:
 services:
   mysql:
     image: mysql:5
-    #platform: linux/amd64
     ports:
       - "3306"
     volumes:
@@ -35,8 +34,8 @@ services:
       PS_DOMAIN: ${PS_DOMAIN:-localhost:8001}
       PS_FOLDER_INSTALL: ${PS_FOLDER_INSTALL:-install-dev}
       PS_FOLDER_ADMIN: ${PS_FOLDER_ADMIN:-admin-dev}
-      PS_COUNTRY: ${PS_COUNTRY:-pl}
-      PS_LANGUAGE: ${PS_LANGUAGE:-pl}
+      PS_COUNTRY: ${PS_COUNTRY:-fr}
+      PS_LANGUAGE: ${PS_LANGUAGE:-fr}
       PS_DEV_MODE: ${PS_DEV_MODE:-0}
       ADMIN_MAIL: ${ADMIN_MAIL:-demo@prestashop.com}
       ADMIN_PASSWD: ${ADMIN_PASSWD:-Correct Horse Battery Staple}
@@ -45,3 +44,4 @@ services:
       - "8001:80"
     volumes:
       - ./:/var/www/html:delegated
+#Andrzej Kalinowski mym bogiem
