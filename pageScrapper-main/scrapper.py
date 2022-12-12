@@ -72,7 +72,7 @@ def parse(products, categoryName):
             try:
                 img_data = s.get(img).content
                 pat = name + '.jpg'
-                pat = pat.replace(' ', '_').replace('/', '_')
+                pat = pat.replace(' ', '_').replace('/', '_').replace('+', '_').replace('?', '_')
                 with open('images\\' + pat, 'wb') as handler:
                     handler.write(img_data)
             except:
@@ -85,16 +85,14 @@ def parse(products, categoryName):
 
         item = {
             'Nazwa': name,
-            'Opis': desc,
+            'Opis': '\"'+desc+'\"',
             'Cena bez podatku.': priceNetto,
             'Cena zawiera podatek.': price,
             'Dostępne do zamówienia': stock,
             'Ilość': amount,
             'Kategorie': categoryName,
-            'Procesor': processor,
-            'Pamięć': memory,
-            'Adresy URL zdjęcia': img,
-            'Nazwa obrazu': pat
+            'Cecha': 'Procesor:'+processor+':1:0;Pamięć:'+memory+':2:0',
+            'Adresy URL zdjęcia': 'http://localhost/import/'+pat
         }
         items.append(item)
         time.sleep(0.1)
@@ -125,7 +123,7 @@ def extract_data_from_category(url, categoryName):
             print('Total Items: ', len(items))
             x = x + 1
             time.sleep(2)
-            if len(items) > 350:
+            if len(items) > 150:
                 break
         except:
             print('No more items!')
