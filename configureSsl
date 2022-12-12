@@ -1,12 +1,9 @@
 docker cp ./ssl/000-default.conf prestashop_prestashop-git_1:/etc/apache2/sites-available/000-default.conf
 docker cp ./ssl/apache2.conf prestashop_prestashop-git_1:/etc/apache2/apache2.conf
-docker cp ./ssl/ssl_sql.sql prestashop_mysql_1:/ssl_sql.sql
-docker cp ./ssl/ssl_sql.sh prestashop_mysql_1:/ssl_sql.sh
-
+docker cp ./ssl/sslConfig.sql prestashop_mysql_1:/sslConfig.sql
+docker cp ./ssl/deployDb.sh prestashop_mysql_1:/deployDb.sh
 docker exec prestashop_prestashop-git_1 openssl req -newkey rsa:2048 -new -nodes -x509 -days 365 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt -subj "/C=PL/ST=Pomerania/L=Gdansk/O=PG/OU=./CN=."
 docker exec prestashop_prestashop-git_1 a2enmod ssl
 docker exec prestashop_prestashop-git_1 service apache2 reload
-
-docker exec prestashop_mysql_1 chmod +x /ssl_sql.sh
-
-docker exec prestashop_mysql_1 /bin/bash /ssl_sql.sh
+docker exec prestashop_mysql_1 chmod +x /deployDb.sh
+docker exec prestashop_mysql_1 /bin/bash /deployDb.sh
