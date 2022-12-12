@@ -1,3 +1,0 @@
-<?php //SplFileInfo%2523getPerms
-
-return [PHP_INT_MAX, []];

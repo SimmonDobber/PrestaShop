@@ -1,3 +1,0 @@
-<?php //SplFileInfo
-
-return [PHP_INT_MAX, []];
