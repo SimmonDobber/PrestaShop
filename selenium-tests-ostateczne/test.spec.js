@@ -12,9 +12,9 @@ suite(function(env) {
       let driver;
       const config = {
         categoriesNames: ['laptopy-notebooki-ultrabooki', 'smartfony-i-telefony'],
-        productsInCategory: 5,
+        productsInCategory: 6,
         minQuantity: 1,
-        maxQuantity: 3,
+        maxQuantity: 4,
         productsToDelete: 1,
         userGender: '1',
         userFirstname: chance.first({gender: 'male'}),
@@ -62,7 +62,6 @@ suite(function(env) {
             break;
           }
         }
-
         if (Object.keys(categories_links).length == config.categoriesNames.length) {
           break;
         }
