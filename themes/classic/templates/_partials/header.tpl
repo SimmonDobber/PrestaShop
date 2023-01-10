@@ -22,6 +22,18 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
+
+<!-- Google tag (gtag.js) -->
+{literal}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5DDF5K0T9W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5DDF5K0T9W');
+</script>
+{/literal}
 {block name='header_banner'}
   <div class="header-banner">
     {hook h='displayBanner'}

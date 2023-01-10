@@ -13,7 +13,7 @@ services:
     ports:
       - "3306"
     volumes:
-      - db-data:/var/lib/mysql
+      - ./mysql
     environment:
       MYSQL_ROOT_PASSWORD: prestashop
       MYSQL_DATABASE: prestashop
