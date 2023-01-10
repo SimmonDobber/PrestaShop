@@ -2,7 +2,7 @@
     "name": "xkom-pkp",
     "version": "1.0.0",
     "scripts": {
-        "test": "env HEADLESS=false mocha test.spec.js --require mocha-steps"
+        "test": "env mocha test.spec.js --require mocha-steps"
     },
     "dependencies": {
         "selenium-webdriver": "^4.7.0",
