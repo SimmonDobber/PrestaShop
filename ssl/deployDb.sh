@@ -1,1 +1,1 @@
-mysql -u root -pprestashop < /ssl_sql.sql
+mysql -u root -pprestashop < /sslConfig.sql

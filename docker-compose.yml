@@ -11,9 +11,9 @@ services:
       dockerfile: Dockerfile
       context: ./mysql/.
     ports:
-      - "3306"
+      - 3306:3306
     volumes:
-      - ./mysql
+      - db-data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: prestashop
       MYSQL_DATABASE: prestashop
