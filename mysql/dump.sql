@@ -1,5 +1,5 @@
 /* Backup for localhost:8002/
- *  at 2023-01-11 14:24:09
+ *  at 2023-01-12 20:47:42
  */
 
 SET NAMES 'utf8mb4';
@@ -513,6 +513,18 @@ INSERT INTO `ps_access` VALUES
 ('1','622'),
 ('1','623'),
 ('1','624'),
+('1','765'),
+('1','766'),
+('1','767'),
+('1','768'),
+('1','769'),
+('1','770'),
+('1','771'),
+('1','772'),
+('1','773'),
+('1','774'),
+('1','775'),
+('1','776'),
 ('2','5'),
 ('2','6'),
 ('2','7'),
@@ -604,7 +616,8 @@ INSERT INTO `ps_access` VALUES
 ('2','423'),
 ('2','424'),
 ('3','41'),
-('3','42'),
+('3','42');
+INSERT INTO `ps_access` VALUES
 ('3','43'),
 ('3','44'),
 ('3','45'),
@@ -616,8 +629,7 @@ INSERT INTO `ps_access` VALUES
 ('3','123'),
 ('3','124'),
 ('3','137'),
-('3','138');
-INSERT INTO `ps_access` VALUES
+('3','138'),
 ('3','139'),
 ('3','140'),
 ('3','221'),
@@ -1224,7 +1236,7 @@ CREATE TABLE `ps_authorization_role` (
   `slug` varchar(191) NOT NULL,
   PRIMARY KEY (`id_authorization_role`),
   UNIQUE KEY `slug` (`slug`)
-) ENGINE=InnoDB AUTO_INCREMENT=765 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=781 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `ps_authorization_role` VALUES
 ('465','ROLE_MOD_MODULE_BLOCKREASSURANCE_CREATE'),
@@ -1279,6 +1291,10 @@ INSERT INTO `ps_authorization_role` VALUES
 ('492','ROLE_MOD_MODULE_PSGDPR_DELETE'),
 ('490','ROLE_MOD_MODULE_PSGDPR_READ'),
 ('491','ROLE_MOD_MODULE_PSGDPR_UPDATE'),
+('777','ROLE_MOD_MODULE_PSXMARKETINGWITHGOOGLE_CREATE'),
+('780','ROLE_MOD_MODULE_PSXMARKETINGWITHGOOGLE_DELETE'),
+('778','ROLE_MOD_MODULE_PSXMARKETINGWITHGOOGLE_READ'),
+('779','ROLE_MOD_MODULE_PSXMARKETINGWITHGOOGLE_UPDATE'),
 ('537','ROLE_MOD_MODULE_PS_BANNER_CREATE'),
 ('540','ROLE_MOD_MODULE_PS_BANNER_DELETE'),
 ('538','ROLE_MOD_MODULE_PS_BANNER_READ'),
@@ -1422,12 +1438,12 @@ INSERT INTO `ps_authorization_role` VALUES
 ('601','ROLE_MOD_MODULE_STATSBESTCUSTOMERS_CREATE'),
 ('604','ROLE_MOD_MODULE_STATSBESTCUSTOMERS_DELETE'),
 ('602','ROLE_MOD_MODULE_STATSBESTCUSTOMERS_READ'),
-('603','ROLE_MOD_MODULE_STATSBESTCUSTOMERS_UPDATE'),
+('603','ROLE_MOD_MODULE_STATSBESTCUSTOMERS_UPDATE');
+INSERT INTO `ps_authorization_role` VALUES
 ('645','ROLE_MOD_MODULE_STATSBESTMANUFACTURERS_CREATE'),
 ('648','ROLE_MOD_MODULE_STATSBESTMANUFACTURERS_DELETE'),
 ('646','ROLE_MOD_MODULE_STATSBESTMANUFACTURERS_READ'),
-('647','ROLE_MOD_MODULE_STATSBESTMANUFACTURERS_UPDATE');
-INSERT INTO `ps_authorization_role` VALUES
+('647','ROLE_MOD_MODULE_STATSBESTMANUFACTURERS_UPDATE'),
 ('697','ROLE_MOD_MODULE_STATSBESTPRODUCTS_CREATE'),
 ('700','ROLE_MOD_MODULE_STATSBESTPRODUCTS_DELETE'),
 ('698','ROLE_MOD_MODULE_STATSBESTPRODUCTS_READ'),
@@ -1508,6 +1524,10 @@ INSERT INTO `ps_authorization_role` VALUES
 ('496','ROLE_MOD_TAB_ADMINAJAXPSGDPR_DELETE'),
 ('494','ROLE_MOD_TAB_ADMINAJAXPSGDPR_READ'),
 ('495','ROLE_MOD_TAB_ADMINAJAXPSGDPR_UPDATE'),
+('773','ROLE_MOD_TAB_ADMINAJAXPSXMKTGWITHGOOGLE_CREATE'),
+('776','ROLE_MOD_TAB_ADMINAJAXPSXMKTGWITHGOOGLE_DELETE'),
+('774','ROLE_MOD_TAB_ADMINAJAXPSXMKTGWITHGOOGLE_READ'),
+('775','ROLE_MOD_TAB_ADMINAJAXPSXMKTGWITHGOOGLE_UPDATE'),
 ('17','ROLE_MOD_TAB_ADMINATTACHMENTS_CREATE'),
 ('20','ROLE_MOD_TAB_ADMINATTACHMENTS_DELETE'),
 ('18','ROLE_MOD_TAB_ADMINATTACHMENTS_READ'),
@@ -1619,7 +1639,8 @@ INSERT INTO `ps_authorization_role` VALUES
 ('109','ROLE_MOD_TAB_ADMINIMAGES_CREATE'),
 ('112','ROLE_MOD_TAB_ADMINIMAGES_DELETE'),
 ('110','ROLE_MOD_TAB_ADMINIMAGES_READ'),
-('111','ROLE_MOD_TAB_ADMINIMAGES_UPDATE'),
+('111','ROLE_MOD_TAB_ADMINIMAGES_UPDATE');
+INSERT INTO `ps_authorization_role` VALUES
 ('113','ROLE_MOD_TAB_ADMINIMPORT_CREATE'),
 ('116','ROLE_MOD_TAB_ADMINIMPORT_DELETE'),
 ('114','ROLE_MOD_TAB_ADMINIMPORT_READ'),
@@ -1627,8 +1648,7 @@ INSERT INTO `ps_authorization_role` VALUES
 ('117','ROLE_MOD_TAB_ADMININFORMATION_CREATE'),
 ('120','ROLE_MOD_TAB_ADMININFORMATION_DELETE'),
 ('118','ROLE_MOD_TAB_ADMININFORMATION_READ'),
-('119','ROLE_MOD_TAB_ADMININFORMATION_UPDATE');
-INSERT INTO `ps_authorization_role` VALUES
+('119','ROLE_MOD_TAB_ADMININFORMATION_UPDATE'),
 ('121','ROLE_MOD_TAB_ADMININTERNATIONAL_CREATE'),
 ('124','ROLE_MOD_TAB_ADMININTERNATIONAL_DELETE'),
 ('122','ROLE_MOD_TAB_ADMININTERNATIONAL_READ'),
@@ -1820,7 +1840,8 @@ INSERT INTO `ps_authorization_role` VALUES
 ('293','ROLE_MOD_TAB_ADMINPERFORMANCE_CREATE'),
 ('296','ROLE_MOD_TAB_ADMINPERFORMANCE_DELETE'),
 ('294','ROLE_MOD_TAB_ADMINPERFORMANCE_READ'),
-('295','ROLE_MOD_TAB_ADMINPERFORMANCE_UPDATE'),
+('295','ROLE_MOD_TAB_ADMINPERFORMANCE_UPDATE');
+INSERT INTO `ps_authorization_role` VALUES
 ('297','ROLE_MOD_TAB_ADMINPPREFERENCES_CREATE'),
 ('300','ROLE_MOD_TAB_ADMINPPREFERENCES_DELETE'),
 ('298','ROLE_MOD_TAB_ADMINPPREFERENCES_READ'),
@@ -1828,8 +1849,7 @@ INSERT INTO `ps_authorization_role` VALUES
 ('301','ROLE_MOD_TAB_ADMINPREFERENCES_CREATE'),
 ('304','ROLE_MOD_TAB_ADMINPREFERENCES_DELETE'),
 ('302','ROLE_MOD_TAB_ADMINPREFERENCES_READ'),
-('303','ROLE_MOD_TAB_ADMINPREFERENCES_UPDATE');
-INSERT INTO `ps_authorization_role` VALUES
+('303','ROLE_MOD_TAB_ADMINPREFERENCES_UPDATE'),
 ('305','ROLE_MOD_TAB_ADMINPRODUCTS_CREATE'),
 ('308','ROLE_MOD_TAB_ADMINPRODUCTS_DELETE'),
 ('306','ROLE_MOD_TAB_ADMINPRODUCTS_READ'),
@@ -1846,6 +1866,10 @@ INSERT INTO `ps_authorization_role` VALUES
 ('620','ROLE_MOD_TAB_ADMINPSTHEMECUSTOCONFIGURATION_DELETE'),
 ('618','ROLE_MOD_TAB_ADMINPSTHEMECUSTOCONFIGURATION_READ'),
 ('619','ROLE_MOD_TAB_ADMINPSTHEMECUSTOCONFIGURATION_UPDATE'),
+('769','ROLE_MOD_TAB_ADMINPSXMKTGWITHGOOGLEMODULE_CREATE'),
+('772','ROLE_MOD_TAB_ADMINPSXMKTGWITHGOOGLEMODULE_DELETE'),
+('770','ROLE_MOD_TAB_ADMINPSXMKTGWITHGOOGLEMODULE_READ'),
+('771','ROLE_MOD_TAB_ADMINPSXMKTGWITHGOOGLEMODULE_UPDATE'),
 ('313','ROLE_MOD_TAB_ADMINREQUESTSQL_CREATE'),
 ('316','ROLE_MOD_TAB_ADMINREQUESTSQL_DELETE'),
 ('314','ROLE_MOD_TAB_ADMINREQUESTSQL_READ'),
@@ -1970,6 +1994,10 @@ INSERT INTO `ps_authorization_role` VALUES
 ('420','ROLE_MOD_TAB_IMPROVE_DELETE'),
 ('418','ROLE_MOD_TAB_IMPROVE_READ'),
 ('419','ROLE_MOD_TAB_IMPROVE_UPDATE'),
+('765','ROLE_MOD_TAB_MARKETING_CREATE'),
+('768','ROLE_MOD_TAB_MARKETING_DELETE'),
+('766','ROLE_MOD_TAB_MARKETING_READ'),
+('767','ROLE_MOD_TAB_MARKETING_UPDATE'),
 ('421','ROLE_MOD_TAB_SELL_CREATE'),
 ('424','ROLE_MOD_TAB_SELL_DELETE'),
 ('422','ROLE_MOD_TAB_SELL_READ'),
@@ -2258,7 +2286,7 @@ CREATE TABLE `ps_cart` (
   KEY `id_shop_group` (`id_shop_group`),
   KEY `id_shop_2` (`id_shop`,`date_upd`),
   KEY `id_shop` (`id_shop`,`date_add`)
-) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `ps_cart` VALUES
 ('1','1','1','2','{\"3\":\"2,\"}','1','5','5','1','2','1','b44a6d9efd7a0076a0fbce6b15eaf3b1','0','0',NULL,'0','0','2022-12-01 23:04:53','2022-12-01 23:04:53',NULL),
@@ -2315,7 +2343,11 @@ INSERT INTO `ps_cart` VALUES
 ('52','1','1','0','','2','0','0','2','0','77','','0','0',NULL,'0','0','2022-12-12 17:44:26','2022-12-12 17:44:54',NULL),
 ('53','1','1','11','{\"19\":\"11,\"}','2','19','19','2','36','78','59ee99abe34da99bf18374d84375c65f','0','0',NULL,'0','0','2022-12-12 17:46:26','2022-12-12 17:47:18','{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"01c9ac7d6b1a91706867408dbd58ecc51fd21e6c\"}'),
 ('54','1','1','11','{\"20\":\"11,\"}','2','20','20','2','37','79','b9d511bca6cd5e1c2fceb9aaad0a754f','0','0',NULL,'0','0','2022-12-12 18:44:02','2022-12-12 18:44:54','{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"723d9b5efae4d6c7a21e6e4df0c94869dfdf3495\"}'),
-('55','1','1','15','{\"10\":\"15,\"}','2','10','10','2','3','3','7c727158619ccffd14860eee3361e69e','0','0',NULL,'0','0','2023-01-08 19:09:29','2023-01-08 19:18:37','{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"75e8c76ba3404d1c56ca1affa372c6173238456b\"}');
+('55','1','1','15','{\"10\":\"15,\"}','2','10','10','2','3','3','7c727158619ccffd14860eee3361e69e','0','0',NULL,'0','0','2023-01-08 19:09:29','2023-01-08 19:18:37','{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"75e8c76ba3404d1c56ca1affa372c6173238456b\"}'),
+('56','1','1','13','{\"10\":\"13,\"}','2','10','10','2','3','3','7c727158619ccffd14860eee3361e69e','0','0',NULL,'0','0','2023-01-11 23:42:04','2023-01-11 23:42:12','{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"e7ff527d2333960f628233974e6e64e76badc33a\"}'),
+('57','1','1','15','{\"10\":\"15,\"}','2','10','10','2','3','3','7c727158619ccffd14860eee3361e69e','0','0',NULL,'0','0','2023-01-11 23:51:41','2023-01-11 23:52:08','{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"561610180fa95cb96979f4fb8762ac98f27bfff2\"}'),
+('58','1','1','13','{\"10\":\"13,\"}','2','10','10','2','3','3','7c727158619ccffd14860eee3361e69e','0','0',NULL,'0','0','2023-01-12 00:11:21','2023-01-12 00:11:30','{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"f512d33c98a9e6b2f611cf2608d32119bd41672d\"}'),
+('59','1','1','13','{\"10\":\"13,\"}','2','10','10','2','3','3','7c727158619ccffd14860eee3361e69e','0','0',NULL,'0','0','2023-01-12 12:12:57','2023-01-12 12:13:48','{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"6428d4de22911ccfbd9547ce1baa7b75d98d7146\"}');
 /* Scheme for table ps_cart_cart_rule */
 DROP TABLE IF EXISTS `ps_cart_cart_rule`;
 CREATE TABLE `ps_cart_cart_rule` (
@@ -2659,7 +2691,12 @@ INSERT INTO `ps_cart_product` VALUES
 ('54','138','20','1','0','0','2','2022-12-12 18:44:10'),
 ('54','139','20','1','0','0','3','2022-12-12 18:44:12'),
 ('54','140','20','1','0','0','1','2022-12-12 18:44:15'),
-('55','3','10','1','0','0','1','2023-01-08 19:09:29');
+('55','3','10','1','0','0','1','2023-01-08 19:09:29'),
+('56','11','10','1','0','0','1','2023-01-11 23:42:04'),
+('57','145','10','1','0','0','1','2023-01-11 23:51:41'),
+('58','533','10','1','0','0','1','2023-01-12 00:11:21'),
+('59','134','10','1','0','0','1','2023-01-12 12:12:57'),
+('59','155','10','1','0','0','1','2023-01-12 12:13:33');
 /* Scheme for table ps_cart_rule */
 DROP TABLE IF EXISTS `ps_cart_rule`;
 CREATE TABLE `ps_cart_rule` (
@@ -3940,7 +3977,7 @@ INSERT INTO `ps_configuration` VALUES
 ('355',NULL,NULL,'CONF_PS_WIREPAYMENT_VAR','2','2022-12-01 23:04:52','2022-12-01 23:04:52'),
 ('356',NULL,NULL,'CONF_PS_WIREPAYMENT_FIXED_FOREIGN','0.2','2022-12-01 23:04:52','2022-12-01 23:04:52'),
 ('357',NULL,NULL,'CONF_PS_WIREPAYMENT_VAR_FOREIGN','2','2022-12-01 23:04:52','2022-12-01 23:04:52'),
-('358',NULL,NULL,'PS_DASHGOALS_CURRENT_YEAR','2022','2022-12-01 23:04:52','2023-01-08 19:15:37'),
+('358',NULL,NULL,'PS_DASHGOALS_CURRENT_YEAR','2022','2022-12-01 23:04:52','2023-01-11 23:54:50'),
 ('359',NULL,NULL,'CONF_PS_CHECKPAYMENT_FIXED','0.2','2022-12-01 23:04:52','2022-12-01 23:04:52'),
 ('360',NULL,NULL,'CONF_PS_CHECKPAYMENT_VAR','2','2022-12-01 23:04:52','2022-12-01 23:04:52'),
 ('361',NULL,NULL,'CONF_PS_CHECKPAYMENT_FIXED_FOREIGN','0.2','2022-12-01 23:04:52','2022-12-01 23:04:52'),
@@ -4043,12 +4080,12 @@ INSERT INTO `ps_configuration` VALUES
 ('457',NULL,NULL,'PS_INVOICE_LEGAL_FREE_TEXT',NULL,'2022-12-12 19:46:07','2022-12-12 19:46:07'),
 ('458',NULL,NULL,'PS_INVOICE_FREE_TEXT',NULL,'2022-12-12 19:46:07','2022-12-12 19:46:07'),
 ('459',NULL,NULL,'PS_PDF_USE_CACHE',NULL,'2022-12-12 19:46:07','2022-12-12 19:52:57'),
-('460',NULL,NULL,'GA_ACCOUNT_ID','UA-253350072','2023-01-08 17:38:02','2023-01-08 20:22:51'),
-('461',NULL,NULL,'GANALYTICS_CONFIGURATION_OK','1','2023-01-08 17:38:02','2023-01-08 20:22:51'),
-('462',NULL,NULL,'GA_USERID_ENABLED','1','2023-01-08 17:38:02','2023-01-08 20:22:51'),
-('463',NULL,NULL,'GA_CROSSDOMAIN_ENABLED',NULL,'2023-01-08 17:38:02','2023-01-08 20:22:51'),
-('464',NULL,NULL,'GA_ANONYMIZE_ENABLED',NULL,'2023-01-08 17:38:02','2023-01-08 20:22:51'),
-('465',NULL,NULL,'GA_TRACK_BACKOFFICE_ENABLED',NULL,'2023-01-08 17:38:02','2023-01-08 20:22:51');
+('460',NULL,NULL,'GA_ACCOUNT_ID','UA-253350072-1','2023-01-08 17:38:02','2023-01-11 23:49:53'),
+('461',NULL,NULL,'GANALYTICS_CONFIGURATION_OK','1','2023-01-08 17:38:02','2023-01-11 23:49:53'),
+('462',NULL,NULL,'GA_USERID_ENABLED','1','2023-01-08 17:38:02','2023-01-11 23:49:53'),
+('463',NULL,NULL,'GA_CROSSDOMAIN_ENABLED',NULL,'2023-01-08 17:38:02','2023-01-11 23:49:53'),
+('464',NULL,NULL,'GA_ANONYMIZE_ENABLED',NULL,'2023-01-08 17:38:02','2023-01-11 23:49:53'),
+('465',NULL,NULL,'GA_TRACK_BACKOFFICE_ENABLED','1','2023-01-08 17:38:02','2023-01-11 23:49:53');
 /* Scheme for table ps_configuration_kpi */
 DROP TABLE IF EXISTS `ps_configuration_kpi`;
 CREATE TABLE `ps_configuration_kpi` (
@@ -4130,14 +4167,14 @@ INSERT INTO `ps_configuration_kpi` VALUES
 ('62',NULL,NULL,'NEWSLETTER_REGISTRATIONS_EXPIRE','1670891982','2022-12-10 18:47:15','2022-12-12 19:39:42'),
 ('63',NULL,NULL,'ORDERS_PER_CUSTOMER','0.03','2022-12-10 18:47:15','2022-12-12 19:39:26'),
 ('64',NULL,NULL,'ORDERS_PER_CUSTOMER_EXPIRE','1670956782','2022-12-10 18:47:15','2022-12-12 19:39:42'),
-('65',NULL,NULL,'CONVERSION_RATE','0%','2022-12-10 18:47:43','2022-12-10 18:47:43'),
-('66',NULL,NULL,'CONVERSION_RATE_EXPIRE','1670886000','2022-12-10 18:47:43','2022-12-12 00:24:08'),
-('67',NULL,NULL,'ABANDONED_CARTS','4','2022-12-10 18:47:43','2022-12-12 19:03:46'),
-('68',NULL,NULL,'ABANDONED_CARTS_EXPIRE','1670871826','2022-12-10 18:47:43','2022-12-12 19:03:46'),
+('65',NULL,NULL,'CONVERSION_RATE','1.47%','2022-12-10 18:47:43','2023-01-11 23:54:59'),
+('66',NULL,NULL,'CONVERSION_RATE_EXPIRE','1673478000','2022-12-10 18:47:43','2023-01-11 23:54:59'),
+('67',NULL,NULL,'ABANDONED_CARTS','0','2022-12-10 18:47:43','2023-01-11 23:54:59'),
+('68',NULL,NULL,'ABANDONED_CARTS_EXPIRE','1673481299','2022-12-10 18:47:43','2023-01-11 23:54:59'),
 ('69',NULL,NULL,'NETPROFIT_VISIT','0,00 zł','2022-12-10 18:47:43','2022-12-10 18:47:43'),
 ('70',NULL,NULL,'NETPROFIT_VISIT_EXPIRE','1670886000','2022-12-10 18:47:43','2022-12-12 00:24:08'),
-('71',NULL,NULL,'AVG_ORDER_VALUE','0,00 zł','2022-12-10 18:47:43','2022-12-10 18:47:43'),
-('72',NULL,NULL,'AVG_ORDER_VALUE_EXPIRE','1670886000','2022-12-10 18:47:43','2022-12-12 00:24:08');
+('71',NULL,NULL,'AVG_ORDER_VALUE','16 926,55 zł','2022-12-10 18:47:43','2023-01-11 23:54:59'),
+('72',NULL,NULL,'AVG_ORDER_VALUE_EXPIRE','1673478000','2022-12-10 18:47:43','2023-01-11 23:54:59');
 /* Scheme for table ps_configuration_kpi_lang */
 DROP TABLE IF EXISTS `ps_configuration_kpi_lang`;
 CREATE TABLE `ps_configuration_kpi_lang` (
@@ -4229,7 +4266,7 @@ CREATE TABLE `ps_connections` (
   KEY `id_guest` (`id_guest`),
   KEY `date_add` (`date_add`),
   KEY `id_page` (`id_page`)
-) ENGINE=InnoDB AUTO_INCREMENT=111 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=utf8mb4;
 
 /* Scheme for table ps_connections_page */
 DROP TABLE IF EXISTS `ps_connections_page`;
@@ -4255,7 +4292,7 @@ CREATE TABLE `ps_connections_source` (
   KEY `orderby` (`date_add`),
   KEY `http_referer` (`http_referer`),
   KEY `request_uri` (`request_uri`)
-) ENGINE=InnoDB AUTO_INCREMENT=3134 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3218 DEFAULT CHARSET=utf8mb4;
 
 /* Scheme for table ps_contact */
 DROP TABLE IF EXISTS `ps_contact`;
@@ -5557,7 +5594,7 @@ INSERT INTO `ps_customer_session` VALUES
 ('45','35','7ddedd34ae7ba18a8d41044727975a903de1d544','2022-12-12 17:36:41','2022-12-12 17:37:20'),
 ('46','36','2e73c3bdd80a88bccd1530d2d9f2d1e3979eac70','2022-12-12 17:46:57','2022-12-12 17:47:30'),
 ('47','37','ad31f4a3b11851c8cd31ddd6ed8ddf971e11d913','2022-12-12 18:44:33','2022-12-12 18:45:05'),
-('49','3','77dfbdd05db18fae27dfd784d5fe9919e425d029','2023-01-08 19:09:38','2023-01-11 14:24:02');
+('49','3','77dfbdd05db18fae27dfd784d5fe9919e425d029','2023-01-08 19:09:38','2023-01-12 20:47:41');
 /* Scheme for table ps_customer_thread */
 DROP TABLE IF EXISTS `ps_customer_thread`;
 CREATE TABLE `ps_customer_thread` (
@@ -5757,7 +5794,7 @@ CREATE TABLE `ps_employee` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `ps_employee` VALUES
-('1','1','2','Beier','Marc','demo@prestashop.com','$2y$10$gW3ylt7MvlYyLJYkuuqVeOhPfUCuIHhrxNQkxsiEyBtE0gDpWurOG','2022-12-01 17:04:46','2022-01-01','2022-12-31','0000-00-00','0000-00-00','1','prev-year',NULL,'default','theme.css','1','0','1','1',NULL,'9','0','5','2023-01-11',NULL,'0000-00-00 00:00:00','0');
+('1','1','2','Beier','Marc','demo@prestashop.com','$2y$10$gW3ylt7MvlYyLJYkuuqVeOhPfUCuIHhrxNQkxsiEyBtE0gDpWurOG','2022-12-01 17:04:46','2022-01-03','2023-01-11','0000-00-00','0000-00-00','1','prev-year',NULL,'default','theme.css','1','0','1','1',NULL,'9','0','5','2023-01-12',NULL,'0000-00-00 00:00:00','0');
 /* Scheme for table ps_employee_session */
 DROP TABLE IF EXISTS `ps_employee_session`;
 CREATE TABLE `ps_employee_session` (
@@ -5767,14 +5804,14 @@ CREATE TABLE `ps_employee_session` (
   `date_add` datetime NOT NULL,
   `date_upd` datetime NOT NULL,
   PRIMARY KEY (`id_employee_session`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `ps_employee_session` VALUES
 ('2','1','72439149d6c5c5cafe266de030bf4cc1729b145d','2022-12-10 18:19:44','2022-12-11 01:45:32'),
 ('7','1','de22e4b718e27c70d444a5127762b81a756b0b3a','2022-12-11 17:56:27','2022-12-12 02:23:05'),
 ('11','1','e8d542746e9cc7e6e3fca90b4e5b242fa50c294a','2022-12-12 10:44:54','2022-12-12 10:44:54'),
 ('13','1','ac3bb8db780434b9cc5034b719f9e6eb52abb920','2022-12-12 16:49:39','2022-12-12 19:57:23'),
-('18','1','5033a6021c288450e2cf43114c1507fc08addc9b','2023-01-11 14:23:04','2023-01-11 14:24:09');
+('21','1','c3d39f751893ab4f7fffd34780ac397ee4e18e76','2023-01-12 20:46:38','2023-01-12 20:47:42');
 /* Scheme for table ps_employee_shop */
 DROP TABLE IF EXISTS `ps_employee_shop`;
 CREATE TABLE `ps_employee_shop` (
@@ -7327,7 +7364,7 @@ CREATE TABLE `ps_ganalytics` (
   PRIMARY KEY (`id_google_analytics`),
   KEY `id_order` (`id_order`),
   KEY `sent` (`sent`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 INSERT INTO `ps_ganalytics` VALUES
 ('1','6','0','1','0',NULL,'2022-12-10 20:46:27'),
@@ -7342,7 +7379,11 @@ INSERT INTO `ps_ganalytics` VALUES
 ('10','15','0','1','0',NULL,'2022-12-12 16:47:29'),
 ('11','16','0','1','0',NULL,'2022-12-12 17:45:04'),
 ('12','17','0','1','0',NULL,'2022-12-12 18:30:54'),
-('13','18','0','1','1',NULL,'2023-01-08 18:18:59');
+('13','18','0','1','1',NULL,'2023-01-08 18:18:59'),
+('14','19','0','1','1',NULL,'2023-01-11 22:42:23'),
+('15','20','0','1','1',NULL,'2023-01-11 22:52:22'),
+('16','21','0','1','1',NULL,'2023-01-11 23:11:44'),
+('17','22','0','1','1',NULL,'2023-01-12 11:14:00');
 /* Scheme for table ps_ganalytics_data */
 DROP TABLE IF EXISTS `ps_ganalytics_data`;
 CREATE TABLE `ps_ganalytics_data` (
@@ -7389,7 +7430,11 @@ INSERT INTO `ps_ganalytics_data` VALUES
 ('51','1','[[[[[[\"MBG.addCheckoutOption(2,\'\');\"]]]]]]'),
 ('53','1','[[[[[[\"MBG.addCheckoutOption(2,\'\');\"]]]]]]'),
 ('54','1','[[[[[[\"MBG.addCheckoutOption(2,\'\');\"]]]]]]'),
-('55','1','[[[[[[[\"MBG.addCheckoutOption(2,\'\');\"]]]]]]]');
+('55','1','[[[[[[[\"MBG.addCheckoutOption(2,\'\');\"]]]]]]]'),
+('56','1','[[[[[[\"MBG.addCheckoutOption(2,\'\');\"]]]]]]'),
+('57','1','[[[[[[[\"MBG.addCheckoutOption(2,\'\');\"]]]]]]]'),
+('58','1','[[[[[[\"MBG.addCheckoutOption(2,\'\');\"]]]]]]'),
+('59','1','[[[[[[\"MBG.addCheckoutOption(2,\'\');\"]]]]]]');
 /* Scheme for table ps_gender */
 DROP TABLE IF EXISTS `ps_gender`;
 CREATE TABLE `ps_gender` (
@@ -7545,7 +7590,7 @@ CREATE TABLE `ps_hook` (
   `position` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id_hook`),
   UNIQUE KEY `hook_name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=910 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=911 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `ps_hook` VALUES
 ('1','actionValidateOrder','New orders',NULL,'1','1'),
@@ -8450,7 +8495,8 @@ INSERT INTO `ps_hook` VALUES
 ('906','actionObjectCustomerAddAfter','actionObjectCustomerAddAfter',NULL,'1','1'),
 ('907','actionObjectCustomerMessageAddAfter','actionObjectCustomerMessageAddAfter',NULL,'1','1'),
 ('908','actionObjectCustomerThreadAddAfter','actionObjectCustomerThreadAddAfter',NULL,'1','1'),
-('909','actionObjectOrderReturnAddAfter','actionObjectOrderReturnAddAfter',NULL,'1','1');
+('909','actionObjectOrderReturnAddAfter','actionObjectOrderReturnAddAfter',NULL,'1','1'),
+('910','actionCartUpdateQuantityBefore','actionCartUpdateQuantityBefore',NULL,'1','1');
 /* Scheme for table ps_hook_alias */
 DROP TABLE IF EXISTS `ps_hook_alias`;
 CREATE TABLE `ps_hook_alias` (
@@ -8690,6 +8736,7 @@ INSERT INTO `ps_hook_module` VALUES
 ('66','1','888','1'),
 ('66','1','889','1'),
 ('66','1','890','1'),
+('67','1','910','1'),
 ('3','1','848','2'),
 ('4','1','53','2'),
 ('4','1','849','2'),
@@ -8732,6 +8779,7 @@ INSERT INTO `ps_hook_module` VALUES
 ('57','1','864','2'),
 ('64','1','50','2'),
 ('65','1','901','2'),
+('67','1','76','2'),
 ('2','1','846','3'),
 ('5','1','45','3'),
 ('8','1','855','3'),
@@ -8759,12 +8807,13 @@ INSERT INTO `ps_hook_module` VALUES
 ('57','1','17','3'),
 ('60','1','127','3'),
 ('66','1','87','3'),
+('67','1','50','3'),
 ('3','1','45','4'),
-('9','1','855','4'),
+('9','1','855','4');
+INSERT INTO `ps_hook_module` VALUES
 ('15','1','19','4'),
 ('17','1','32','4'),
-('18','1','23','4');
-INSERT INTO `ps_hook_module` VALUES
+('18','1','23','4'),
 ('18','1','24','4'),
 ('22','1','20','4'),
 ('34','1','60','4'),
@@ -8776,6 +8825,7 @@ INSERT INTO `ps_hook_module` VALUES
 ('64','1','74','4'),
 ('65','1','894','4'),
 ('66','1','17','4'),
+('67','1','29','4'),
 ('16','1','19','5'),
 ('18','1','32','5'),
 ('40','1','60','5'),
@@ -8790,6 +8840,7 @@ INSERT INTO `ps_hook_module` VALUES
 ('41','1','32','6'),
 ('42','1','60','6'),
 ('65','1','849','6'),
+('67','1','20','6'),
 ('18','1','19','7'),
 ('45','1','60','7'),
 ('63','1','32','7'),
@@ -13201,7 +13252,7 @@ CREATE TABLE `ps_log` (
   `date_add` datetime NOT NULL,
   `date_upd` datetime NOT NULL,
   PRIMARY KEY (`id_log`)
-) ENGINE=InnoDB AUTO_INCREMENT=1094 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=1098 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `ps_log` VALUES
 ('1','1','0','Exporting mail with theme modern for language Français (French)',NULL,'0','1',NULL,'0','0','0','2022-12-01 23:04:44','2022-12-01 23:04:44'),
@@ -14301,7 +14352,11 @@ INSERT INTO `ps_log` VALUES
 ('1090','1','0','Połączenie z panelem administracyjnym z 172.18.0.1',NULL,'0',NULL,NULL,'2','1','1','2023-01-08 19:03:36','2023-01-08 19:03:36'),
 ('1091','1','0','Połączenie z panelem administracyjnym z 172.18.0.1',NULL,'0',NULL,NULL,'2','1','1','2023-01-08 23:41:56','2023-01-08 23:41:56'),
 ('1092','1','0','Połączenie z panelem administracyjnym z 172.18.0.1',NULL,'0',NULL,NULL,'2','1','1','2023-01-10 20:06:41','2023-01-10 20:06:41'),
-('1093','1','0','Połączenie z panelem administracyjnym z 172.18.0.1',NULL,'0',NULL,NULL,'2','1','1','2023-01-11 14:23:04','2023-01-11 14:23:04');
+('1093','1','0','Połączenie z panelem administracyjnym z 172.18.0.1',NULL,'0',NULL,NULL,'2','1','1','2023-01-11 14:23:04','2023-01-11 14:23:04'),
+('1094','1','0','Połączenie z panelem administracyjnym z 172.18.0.1',NULL,'0',NULL,NULL,'2','1','1','2023-01-11 23:34:31','2023-01-11 23:34:31'),
+('1095','1','0','Protect vendor folder in module psxmarketingwithgoogle',NULL,'0','1',NULL,'2','0','1','2023-01-12 00:54:41','2023-01-12 00:54:41'),
+('1096','1','0','Połączenie z panelem administracyjnym z 172.18.0.1',NULL,'0',NULL,NULL,'2','1','1','2023-01-12 12:14:23','2023-01-12 12:14:23'),
+('1097','1','0','Połączenie z panelem administracyjnym z 172.18.0.1',NULL,'0',NULL,NULL,'2','1','1','2023-01-12 20:46:38','2023-01-12 20:46:38');
 /* Scheme for table ps_mail */
 DROP TABLE IF EXISTS `ps_mail`;
 CREATE TABLE `ps_mail` (
@@ -14577,7 +14632,7 @@ CREATE TABLE `ps_module` (
   PRIMARY KEY (`id_module`),
   UNIQUE KEY `name_UNIQUE` (`name`),
   KEY `name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=68 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `ps_module` VALUES
 ('1','ps_linklist','1','5.0.5'),
@@ -14644,7 +14699,8 @@ INSERT INTO `ps_module` VALUES
 ('63','ps_categoryproducts','1','1.0.4'),
 ('64','ps_googleanalytics','1','4.1.2'),
 ('65','dashactivity','1','2.0.2'),
-('66','ps_facetedsearch','1','3.8.0');
+('66','ps_facetedsearch','1','3.8.0'),
+('67','psxmarketingwithgoogle','1','1.36.0');
 /* Scheme for table ps_module_access */
 DROP TABLE IF EXISTS `ps_module_access`;
 CREATE TABLE `ps_module_access` (
@@ -14914,7 +14970,11 @@ INSERT INTO `ps_module_access` VALUES
 ('1','761'),
 ('1','762'),
 ('1','763'),
-('1','764');
+('1','764'),
+('1','777'),
+('1','778'),
+('1','779'),
+('1','780');
 /* Scheme for table ps_module_carrier */
 DROP TABLE IF EXISTS `ps_module_carrier`;
 CREATE TABLE `ps_module_carrier` (
@@ -15167,7 +15227,10 @@ INSERT INTO `ps_module_group` VALUES
 ('65','1','3'),
 ('66','1','1'),
 ('66','1','2'),
-('66','1','3');
+('66','1','3'),
+('67','1','1'),
+('67','1','2'),
+('67','1','3');
 /* Scheme for table ps_module_history */
 DROP TABLE IF EXISTS `ps_module_history`;
 CREATE TABLE `ps_module_history` (
@@ -15177,7 +15240,7 @@ CREATE TABLE `ps_module_history` (
   `date_add` datetime NOT NULL,
   `date_upd` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `ps_module_history` VALUES
 ('1','1','10','2022-12-10 19:48:34','2022-12-10 19:48:34'),
@@ -15187,19 +15250,22 @@ INSERT INTO `ps_module_history` VALUES
 ('5','1','16','2022-12-10 20:28:32','2022-12-10 20:28:32'),
 ('6','1','17','2022-12-10 20:28:36','2022-12-10 20:28:36'),
 ('7','1','14','2022-12-10 20:28:56','2022-12-11 21:01:06'),
-('8','1','49','2022-12-10 20:29:27','2022-12-10 20:29:27'),
+('8','1','49','2022-12-10 20:29:27','2023-01-12 00:14:13'),
 ('9','1','51','2022-12-10 20:29:39','2022-12-10 20:29:39'),
 ('10','1','57','2022-12-10 20:29:43','2022-12-10 20:29:43'),
 ('11','1','39','2022-12-10 20:29:48','2022-12-10 20:29:48'),
 ('12','1','36','2022-12-10 20:29:51','2022-12-10 20:29:51'),
-('13','1','64','2022-12-10 20:30:00','2023-01-08 23:42:34'),
-('14','1','59','2022-12-10 20:30:10','2022-12-10 20:30:10'),
+('13','1','64','2022-12-10 20:30:00','2023-01-12 20:47:08'),
+('14','1','59','2022-12-10 20:30:10','2023-01-12 00:56:47'),
 ('15','1','26','2022-12-10 20:51:04','2022-12-11 19:04:59'),
 ('16','1','41','2022-12-10 21:31:01','2022-12-10 21:56:22'),
 ('17','1','38','2022-12-11 00:31:27','2022-12-11 19:04:46'),
 ('18','1','15','2022-12-11 00:32:31','2022-12-11 00:32:31'),
 ('19','1','12','2022-12-11 00:38:17','2022-12-11 00:41:28'),
-('20','1','3','2022-12-11 00:56:19','2022-12-12 19:37:06');
+('20','1','3','2022-12-11 00:56:19','2022-12-12 19:37:06'),
+('21','1','32','2023-01-12 00:14:50','2023-01-12 00:14:50'),
+('22','1','18','2023-01-12 00:47:38','2023-01-12 00:47:38'),
+('23','1','67','2023-01-12 00:54:46','2023-01-12 00:54:46');
 /* Scheme for table ps_module_preference */
 DROP TABLE IF EXISTS `ps_module_preference`;
 CREATE TABLE `ps_module_preference` (
@@ -15287,7 +15353,8 @@ INSERT INTO `ps_module_shop` VALUES
 ('63','1','7'),
 ('64','1','7'),
 ('65','1','7'),
-('66','1','7');
+('66','1','7'),
+('67','1','7');
 /* Scheme for table ps_operating_system */
 DROP TABLE IF EXISTS `ps_operating_system`;
 CREATE TABLE `ps_operating_system` (
@@ -15322,7 +15389,7 @@ CREATE TABLE `ps_order_carrier` (
   KEY `id_order` (`id_order`),
   KEY `id_carrier` (`id_carrier`),
   KEY `id_order_invoice` (`id_order_invoice`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `ps_order_carrier` VALUES
 ('1','1','2','0','0.000000','7.000000','8.400000',NULL,'2022-12-01 23:04:54'),
@@ -15342,7 +15409,11 @@ INSERT INTO `ps_order_carrier` VALUES
 ('15','15','11','0','0.000000','0.000000','0.000000',NULL,'2022-12-12 17:47:25'),
 ('16','16','11','2','0.000000','0.000000','0.000000',NULL,'2022-12-12 18:44:58'),
 ('17','17','11','1','0.000000','0.000000','0.000000',NULL,'2022-12-12 19:30:48'),
-('18','18','15','0','0.000000','27.000000','27.000000',NULL,'2023-01-08 19:18:51');
+('18','18','15','0','0.000000','27.000000','27.000000',NULL,'2023-01-08 19:18:51'),
+('19','19','13','0','0.000000','0.000000','0.000000',NULL,'2023-01-11 23:42:16'),
+('20','20','15','0','0.000000','27.000000','27.000000',NULL,'2023-01-11 23:52:13'),
+('21','21','13','0','0.000000','0.000000','0.000000',NULL,'2023-01-12 00:11:33'),
+('22','22','13','0','0.000000','0.000000','0.000000',NULL,'2023-01-12 12:13:53');
 /* Scheme for table ps_order_cart_rule */
 DROP TABLE IF EXISTS `ps_order_cart_rule`;
 CREATE TABLE `ps_order_cart_rule` (
@@ -15418,7 +15489,7 @@ CREATE TABLE `ps_order_detail` (
   KEY `product_attribute_id` (`product_attribute_id`),
   KEY `id_tax_rules_group` (`id_tax_rules_group`),
   KEY `id_order_id_order_detail` (`id_order`,`id_order_detail`)
-) ENGINE=InnoDB AUTO_INCREMENT=89 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=94 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `ps_order_detail` VALUES
 ('1','1','0','0','1','1','1','0','Hummingbird printed t-shirt - Color : White, Size : S','1','1','0','0','0','23.900000','0.00','0.000000','0.000000','0.000000','0.00','0.000000',NULL,NULL,NULL,NULL,'demo_1',NULL,'0.000000','0','0','','0.000','0.000000','0.000','0',NULL,'0','0000-00-00 00:00:00','23.900000','23.900000','23.900000','23.900000','0.000000','0.000000','0.000000','23.900000','5.490000','0.000000','0.000000'),
@@ -15508,7 +15579,12 @@ INSERT INTO `ps_order_detail` VALUES
 ('85','16','2','0','1','5','0','0','Samsung Galaxy S21 FE 5G Fan Edition Grey','1','1','0','0','0','2999.000000','0.00','0.000000','0.000000','0.000000','0.00','0.000000',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','6','0','','0.000','0.000000','0.000','0',NULL,'0','0000-00-00 00:00:00','2999.000000','2999.000000','2999.000000','2999.000000','0.000000','0.000000','0.000000','2999.000000','0.000000','0.000000','0.000000'),
 ('86','16','2','0','1','6','0','0','ASUS ZenFone 8 8/128GB Black','1','1','0','0','0','1999.000000','0.00','0.000000','0.000000','0.000000','0.00','0.000000',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','6','0','','0.000','0.000000','0.000','0',NULL,'0','0000-00-00 00:00:00','1999.000000','1999.000000','1999.000000','1999.000000','0.000000','0.000000','0.000000','1999.000000','0.000000','0.000000','0.000000'),
 ('87','17','1','0','1','135','0','0','Acer Aspire 3 Athlon 3050U/8GB/64+240/Win11S Srebrny','1','1','0','0','0','1349.100000','10.00','0.000000','0.000000','0.000000','0.00','1350.100000',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','6','0','','0.000','0.000000','0.000','0',NULL,'0','0000-00-00 00:00:00','1349.100000','1349.100000','1349.100000','1349.100000','0.000000','0.000000','0.000000','1499.000000','0.000000','0.000000','0.000000'),
-('88','18','0','0','1','3','0','0','Xiaomi Redmi 10C 4/128GB Graphite Gray NFC','1','1','0','0','0','899.000000','0.00','0.000000','0.000000','0.000000','0.00','0.000000',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','6','0','','0.000','0.000000','0.000','0',NULL,'0','0000-00-00 00:00:00','899.000000','899.000000','899.000000','899.000000','0.000000','0.000000','0.000000','899.000000','0.000000','0.000000','0.000000');
+('88','18','0','0','1','3','0','0','Xiaomi Redmi 10C 4/128GB Graphite Gray NFC','1','1','0','0','0','899.000000','0.00','0.000000','0.000000','0.000000','0.00','0.000000',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','6','0','','0.000','0.000000','0.000','0',NULL,'0','0000-00-00 00:00:00','899.000000','899.000000','899.000000','899.000000','0.000000','0.000000','0.000000','899.000000','0.000000','0.000000','0.000000'),
+('89','19','0','0','1','11','0','0','Xiaomi Redmi Note 10 Pro 6/64GB Nebula Purple 120Hz','1','1','0','0','0','1099.000000','0.00','0.000000','0.000000','0.000000','0.00','0.000000',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','6','0','','0.000','0.000000','0.000','0',NULL,'0','0000-00-00 00:00:00','1099.000000','1099.000000','1099.000000','1099.000000','0.000000','0.000000','0.000000','1099.000000','0.000000','0.000000','0.000000'),
+('90','20','0','0','1','145','0','0','HP Victus 15 i5-12450H/16GB/512/W11 RTX3050Ti 144Hz Silver','1','1','0','0','0','3869.100000','10.00','0.000000','0.000000','0.000000','0.00','3870.100000',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','6','0','','0.000','0.000000','0.000','0',NULL,'0','0000-00-00 00:00:00','3869.100000','3869.100000','3869.100000','3869.100000','0.000000','0.000000','0.000000','4299.000000','0.000000','0.000000','0.000000'),
+('91','21','0','0','1','533','0','0','ASUS ROG Zephyrus G14 R9-6900HS/32GB/1TB/Win11 RX6800S 120Hz','1','1','0','0','0','8909.100000','10.00','0.000000','0.000000','0.000000','0.00','8910.100000',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','6','0','','0.000','0.000000','0.000','0',NULL,'0','0000-00-00 00:00:00','8909.100000','8909.100000','8909.100000','8909.100000','0.000000','0.000000','0.000000','9899.000000','0.000000','0.000000','0.000000'),
+('92','22','0','0','1','134','0','0','Xiaomi Redmi Note 11 Pro 5G 6/128GB Graphite Gray','1','1','0','0','0','1749.000000','0.00','0.000000','0.000000','0.000000','0.00','0.000000',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','6','0','','0.000','0.000000','0.000','0',NULL,'0','0000-00-00 00:00:00','1749.000000','1749.000000','1749.000000','1749.000000','0.000000','0.000000','0.000000','1749.000000','0.000000','0.000000','0.000000'),
+('93','22','0','0','1','155','0','0','ASUS TUF Gaming F15 i5-10300H/16GB/512 GTX1650 144Hz','1','1','0','0','0','3014.100000','10.00','0.000000','0.000000','0.000000','0.00','3015.100000',NULL,NULL,NULL,NULL,NULL,NULL,'0.000000','6','0','','0.000','0.000000','0.000','0',NULL,'0','0000-00-00 00:00:00','3014.100000','3014.100000','3014.100000','3014.100000','0.000000','0.000000','0.000000','3349.000000','0.000000','0.000000','0.000000');
 /* Scheme for table ps_order_detail_tax */
 DROP TABLE IF EXISTS `ps_order_detail_tax`;
 CREATE TABLE `ps_order_detail_tax` (
@@ -15532,7 +15608,7 @@ CREATE TABLE `ps_order_history` (
   KEY `order_history_order` (`id_order`),
   KEY `id_employee` (`id_employee`),
   KEY `id_order_state` (`id_order_state`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `ps_order_history` VALUES
 ('1','0','1','1','2022-12-01 23:04:54'),
@@ -15557,7 +15633,11 @@ INSERT INTO `ps_order_history` VALUES
 ('20','1','17','4','2022-12-12 19:31:20'),
 ('21','1','16','4','2022-12-12 19:46:27'),
 ('22','1','16','8','2022-12-12 19:51:16'),
-('23','0','18','10','2023-01-08 19:18:55');
+('23','0','18','10','2023-01-08 19:18:55'),
+('24','0','19','13','2023-01-11 23:42:20'),
+('25','0','20','10','2023-01-11 23:52:17'),
+('26','0','21','13','2023-01-12 00:11:41'),
+('27','0','22','10','2023-01-12 12:13:57');
 /* Scheme for table ps_order_invoice */
 DROP TABLE IF EXISTS `ps_order_invoice`;
 CREATE TABLE `ps_order_invoice` (
@@ -15889,7 +15969,7 @@ CREATE TABLE `ps_orders` (
   KEY `current_state` (`current_state`),
   KEY `id_shop` (`id_shop`),
   KEY `date_add` (`date_add`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `ps_orders` VALUES
 ('1','XKBKNABJK','1','1','2','1','2','1','1','5','5','6','b44a6d9efd7a0076a0fbce6b15eaf3b1','Payment by check','1.000000','ps_checkpayment','0','0',NULL,'0','0.000000','0.000000','0.000000','61.800000','68.200000','66.800000','0.000000','59.800000','59.800000','7.000000','8.400000','7.000000','0.000','0.000000','0.000000','0.000000','0','0','0','0','0000-00-00 00:00:00','0000-00-00 00:00:00','0','2022-12-01 23:04:54','2022-12-01 23:04:54','Test'),
@@ -15909,7 +15989,11 @@ INSERT INTO `ps_orders` VALUES
 ('15','FWDNGPGCP','1','1','11','2','36','53','2','19','19','13','59ee99abe34da99bf18374d84375c65f','Płatność przy odbiorze','1.000000','ps_cashondelivery','0','0',NULL,'0','0.000000','0.000000','0.000000','47846.300000','47846.300000','47846.300000','0.000000','47846.300000','47846.300000','0.000000','0.000000','0.000000','0.000','0.000000','0.000000','0.000000','2','2','0','0','0000-00-00 00:00:00','0000-00-00 00:00:00','0','2022-12-12 17:47:18','2022-12-12 17:47:28',NULL),
 ('16','BFCJDAUZP','1','1','11','2','37','54','2','20','20','8','b9d511bca6cd5e1c2fceb9aaad0a754f','Płatność przy odbiorze','1.000000','ps_cashondelivery','0','0',NULL,'0','0.000000','0.000000','0.000000','32504.000000','32504.000000','32504.000000','32504.000000','32504.000000','32504.000000','0.000000','0.000000','0.000000','0.000','0.000000','0.000000','0.000000','2','2','2','2','2022-12-12 19:46:27','2022-12-12 19:46:27','0','2022-12-12 18:44:55','2022-12-12 19:51:16',NULL),
 ('17','PUFWRTUWB','1','1','11','2','3','41','2','10','10','4','7c727158619ccffd14860eee3361e69e','Płatności elektroniczne','1.000000','ps_wirepayment','0','0',NULL,'0','0.000000','0.000000','0.000000','1349.100000','1349.100000','1349.100000','1349.100000','1349.100000','1349.100000','0.000000','0.000000','0.000000','0.000','0.000000','0.000000','0.000000','2','2','1','1','2022-12-12 19:31:20','2022-12-12 19:31:20','1','2022-12-12 19:30:44','2022-12-12 19:31:20',NULL),
-('18','SEWVFXMSU','1','1','15','2','3','55','2','10','10','10','7c727158619ccffd14860eee3361e69e','Płatności elektroniczne','1.000000','ps_wirepayment','0','0',NULL,'0','0.000000','0.000000','0.000000','926.000000','926.000000','926.000000','0.000000','899.000000','899.000000','27.000000','27.000000','27.000000','0.000','0.000000','0.000000','0.000000','2','2','0','0','0000-00-00 00:00:00','0000-00-00 00:00:00','0','2023-01-08 19:18:51','2023-01-08 19:18:55',NULL);
+('18','SEWVFXMSU','1','1','15','2','3','55','2','10','10','10','7c727158619ccffd14860eee3361e69e','Płatności elektroniczne','1.000000','ps_wirepayment','0','0',NULL,'0','0.000000','0.000000','0.000000','926.000000','926.000000','926.000000','0.000000','899.000000','899.000000','27.000000','27.000000','27.000000','0.000','0.000000','0.000000','0.000000','2','2','0','0','0000-00-00 00:00:00','0000-00-00 00:00:00','0','2023-01-08 19:18:51','2023-01-08 19:18:55',NULL),
+('19','TACDEDRQM','1','1','13','2','3','56','2','10','10','13','7c727158619ccffd14860eee3361e69e','Płatność przy odbiorze','1.000000','ps_cashondelivery','0','0',NULL,'0','0.000000','0.000000','0.000000','1099.000000','1099.000000','1099.000000','0.000000','1099.000000','1099.000000','0.000000','0.000000','0.000000','0.000','0.000000','0.000000','0.000000','2','2','0','0','0000-00-00 00:00:00','0000-00-00 00:00:00','0','2023-01-11 23:42:16','2023-01-11 23:42:20',NULL),
+('20','IEJVGTKRE','1','1','15','2','3','57','2','10','10','10','7c727158619ccffd14860eee3361e69e','Płatności elektroniczne','1.000000','ps_wirepayment','0','0',NULL,'0','0.000000','0.000000','0.000000','3896.100000','3896.100000','3896.100000','0.000000','3869.100000','3869.100000','27.000000','27.000000','27.000000','0.000','0.000000','0.000000','0.000000','2','2','0','0','0000-00-00 00:00:00','0000-00-00 00:00:00','0','2023-01-11 23:52:13','2023-01-11 23:52:17',NULL),
+('21','HWTZDRZAW','1','1','13','2','3','58','2','10','10','13','7c727158619ccffd14860eee3361e69e','Płatność przy odbiorze','1.000000','ps_cashondelivery','0','0',NULL,'0','0.000000','0.000000','0.000000','8909.100000','8909.100000','8909.100000','0.000000','8909.100000','8909.100000','0.000000','0.000000','0.000000','0.000','0.000000','0.000000','0.000000','2','2','0','0','0000-00-00 00:00:00','0000-00-00 00:00:00','0','2023-01-12 00:11:33','2023-01-12 00:11:41',NULL),
+('22','YOUBLQYRW','1','1','13','2','3','59','2','10','10','10','7c727158619ccffd14860eee3361e69e','Płatności elektroniczne','1.000000','ps_wirepayment','0','0',NULL,'0','0.000000','0.000000','0.000000','4763.100000','4763.100000','4763.100000','0.000000','4763.100000','4763.100000','0.000000','0.000000','0.000000','0.000','0.000000','0.000000','0.000000','2','2','0','0','0000-00-00 00:00:00','0000-00-00 00:00:00','0','2023-01-12 12:13:53','2023-01-12 12:13:57',NULL);
 /* Scheme for table ps_pack */
 DROP TABLE IF EXISTS `ps_pack`;
 CREATE TABLE `ps_pack` (
@@ -15985,7 +16069,7 @@ CREATE TABLE `ps_pagenotfound` (
   `date_add` datetime NOT NULL,
   PRIMARY KEY (`id_pagenotfound`),
   KEY `date_add` (`date_add`)
-) ENGINE=InnoDB AUTO_INCREMENT=1560 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1594 DEFAULT CHARSET=utf8;
 
 INSERT INTO `ps_pagenotfound` VALUES
 ('1','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','http://localhost:8001/admin-dev/index.php/improve/international/localization/?_token=al-6cLVg7bP5TI7FJyRZzy0EzlzTBumrzcuKFw3rTG0','2022-12-08 19:32:58'),
@@ -17553,7 +17637,41 @@ INSERT INTO `ps_pagenotfound` VALUES
 ('1556','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/shop/order-preferences/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 13:23:39'),
 ('1557','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/shop/product-preferences/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 13:23:43'),
 ('1558','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/sql-requests/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 13:23:59'),
-('1559','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/backups/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 13:24:02');
+('1559','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/backups/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 13:24:02'),
+('1560','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/backups/?download_filename=1673443449-55f15d3d.sql.gz&_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 13:24:09'),
+('1561','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/improve/modules/manage?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8&find=ps_googleanalytics','2023-01-11 22:35:24'),
+('1562','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/improve/modules/manage?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8&find=ps_googleanalytics','2023-01-11 22:48:37'),
+('1563','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/shop/preferences/preferences?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:55:24'),
+('1564','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/shop/order-preferences/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:55:30'),
+('1565','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/shop/product-preferences/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:55:36'),
+('1566','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/import/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:55:42'),
+('1567','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/webservice-keys/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:55:45'),
+('1568','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/security/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:55:55'),
+('1569','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/feature-flags/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:56:05'),
+('1570','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/webservice-keys/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:56:08'),
+('1571','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/logs/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:56:09'),
+('1572','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/sql-requests/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:56:13'),
+('1573','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/employees/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:56:18'),
+('1574','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/employees/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:56:21'),
+('1575','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/import/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:56:22'),
+('1576','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/emails/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:56:24'),
+('1577','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/administration/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:56:30'),
+('1578','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/performance/?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 22:56:31'),
+('1579','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/improve/modules/manage?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 23:13:04'),
+('1580','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/improve/modules/manage?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 23:13:42'),
+('1581','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/improve/modules/alerts?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 23:13:52'),
+('1582','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/improve/modules/updates?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 23:13:54'),
+('1583','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/improve/modules/manage?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 23:13:55'),
+('1584','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/improve/modules/manage?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 23:14:18'),
+('1585','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/improve/modules/manage?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 23:14:59'),
+('1586','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/improve/modules/manage?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 23:24:29'),
+('1587','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/improve/modules/manage?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 23:47:41'),
+('1588','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/improve/modules/manage?_token=5deFW5CJT1nm9CVWmu-WW-kCA5zvSM89mhawzEzxkv8','2023-01-11 23:56:43'),
+('1589','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/improve/modules/manage?_token=VFiyT4sgyuhWC6n9grLRZDQpJfy1wNSqrFArS38el0g&find=ps_googleanalytics','2023-01-12 11:15:23'),
+('1590','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/improve/modules/manage?_token=VFiyT4sgyuhWC6n9grLRZDQpJfy1wNSqrFArS38el0g&find=ps_googleanalytics','2023-01-12 19:47:06'),
+('1591','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/import/?_token=VFiyT4sgyuhWC6n9grLRZDQpJfy1wNSqrFArS38el0g','2023-01-12 19:47:36'),
+('1592','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/sql-requests/?_token=VFiyT4sgyuhWC6n9grLRZDQpJfy1wNSqrFArS38el0g','2023-01-12 19:47:39'),
+('1593','1','1','/admin-dev/themes/new-theme/public/index.php?controller=AdminDashboard&token=1254865960b091eb51e7085e14dbb4a0','https://localhost:8002/admin-dev/index.php/configure/advanced/backups/?_token=VFiyT4sgyuhWC6n9grLRZDQpJfy1wNSqrFArS38el0g','2023-01-12 19:47:41');
 /* Scheme for table ps_product */
 DROP TABLE IF EXISTS `ps_product`;
 CREATE TABLE `ps_product` (
@@ -25906,7 +26024,7 @@ INSERT INTO `ps_stock_available` VALUES
 ('8','8','0','1','0','3','0','0','0','2',''),
 ('9','9','0','1','0','10','0','0','0','2',''),
 ('10','10','0','1','0','9','0','0','0','2',''),
-('11','11','0','1','0','6','0','0','0','2',''),
+('11','11','0','1','0','5','6','1','0','2',''),
 ('12','12','0','1','0','7','0','0','0','2',''),
 ('13','13','0','1','0','4','0','0','0','2',''),
 ('14','14','0','1','0','11','0','0','0','2',''),
@@ -26029,7 +26147,7 @@ INSERT INTO `ps_stock_available` VALUES
 ('131','131','0','1','0','3','0','0','0','2',''),
 ('132','132','0','1','0','7','0','0','0','2',''),
 ('133','133','0','1','0','4','0','0','0','2',''),
-('134','134','0','1','0','5','0','0','0','2',''),
+('134','134','0','1','0','4','5','1','0','2',''),
 ('135','135','0','1','0','1','1','0','0','2',''),
 ('136','136','0','1','0','5','18','13','0','2',''),
 ('137','137','0','1','0','7','20','13','0','2',''),
@@ -26040,7 +26158,7 @@ INSERT INTO `ps_stock_available` VALUES
 ('142','142','0','1','0','5','0','0','0','2',''),
 ('143','143','0','1','0','2','0','0','0','2',''),
 ('144','144','0','1','0','10','0','0','0','2',''),
-('145','145','0','1','0','6','0','0','0','2',''),
+('145','145','0','1','0','5','6','1','0','2',''),
 ('146','146','0','1','0','12','0','0','0','2',''),
 ('147','147','0','1','0','3','0','0','0','2',''),
 ('148','148','0','1','0','9','0','0','0','2',''),
@@ -26050,7 +26168,7 @@ INSERT INTO `ps_stock_available` VALUES
 ('152','152','0','1','0','6','0','0','0','2',''),
 ('153','153','0','1','0','12','0','0','0','2',''),
 ('154','154','0','1','0','7','0','0','0','2',''),
-('155','155','0','1','0','5','0','0','0','2',''),
+('155','155','0','1','0','4','5','1','0','2',''),
 ('156','156','0','1','0','8','0','0','0','2',''),
 ('157','157','0','1','0','7','0','0','0','2',''),
 ('158','158','0','1','0','0','0','0','0','2',''),
@@ -26430,7 +26548,7 @@ INSERT INTO `ps_stock_available` VALUES
 ('530','530','0','1','0','9','0','0','0','2',''),
 ('531','531','0','1','0','9','0','0','0','2',''),
 ('532','532','0','1','0','6','0','0','0','2',''),
-('533','533','0','1','0','7','0','0','0','2',''),
+('533','533','0','1','0','6','7','1','0','2',''),
 ('534','534','0','1','0','2','0','0','0','2',''),
 ('535','535','0','1','0','7','0','0','0','2',''),
 ('536','536','0','1','0','5','0','0','0','2',''),
@@ -27368,7 +27486,7 @@ CREATE TABLE `ps_tab` (
   `wording` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `wording_domain` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id_tab`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=131 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `ps_tab` VALUES
 ('1','0','0',NULL,'AdminDashboard',NULL,'1','1','trending_up','Dashboard','Admin.Navigation.Menu'),
@@ -27497,7 +27615,10 @@ INSERT INTO `ps_tab` VALUES
 ('124','-1','4','dashgoals','AdminDashgoals',NULL,'1','1',NULL,NULL,NULL),
 ('125','43','0',NULL,'AdminThemesParent',NULL,'1','1',NULL,'Theme & Logo','Admin.Navigation.Menu'),
 ('126','125','2','ps_themecusto','AdminPsThemeCustoConfiguration',NULL,'1','1',NULL,NULL,NULL),
-('127','125','3','ps_themecusto','AdminPsThemeCustoAdvanced',NULL,'1','1',NULL,NULL,NULL);
+('127','125','3','ps_themecusto','AdminPsThemeCustoAdvanced',NULL,'1','1',NULL,NULL,NULL),
+('128','37','5',NULL,'Marketing',NULL,'1','1','campaign',NULL,NULL),
+('129','128','1','psxmarketingwithgoogle','AdminPsxMktgWithGoogleModule',NULL,'1','1',NULL,NULL,NULL),
+('130','-1','5','psxmarketingwithgoogle','AdminAjaxPsxMktgWithGoogle',NULL,'1','1',NULL,NULL,NULL);
 /* Scheme for table ps_tab_lang */
 DROP TABLE IF EXISTS `ps_tab_lang`;
 CREATE TABLE `ps_tab_lang` (
@@ -27758,7 +27879,13 @@ INSERT INTO `ps_tab_lang` VALUES
 ('126','1','Pages Configuration'),
 ('126','2','Pages Configuration'),
 ('127','1','Personnalisation avancée'),
-('127','2','Personnalisation avancée');
+('127','2','Personnalisation avancée'),
+('128','1','Marketing'),
+('128','2','Marketing'),
+('129','1','Google'),
+('129','2','Google'),
+('130','1','psxmarketingwithgoogle'),
+('130','2','psxmarketingwithgoogle');
 /* Scheme for table ps_tab_module_preference */
 DROP TABLE IF EXISTS `ps_tab_module_preference`;
 CREATE TABLE `ps_tab_module_preference` (
